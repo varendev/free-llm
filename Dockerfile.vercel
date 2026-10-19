@@ -18,9 +18,11 @@ EXPOSE 3001
 # these ENV defaults are harmless. If it does not, set HOST=0.0.0.0
 # (or the equivalent variable your app uses).
 ENV HOST=0.0.0.0
+ENV HOSTNAME="0.0.0.0"
 
 # ── No VOLUME instruction: Vercel does not support persistent disks ───
 # The original /app/server/data directory will be ephemeral.
 
 # ── Inherit the upstream ENTRYPOINT / CMD ─────────────────────────────
 # Do not override; the base image already starts the server.
+CMD ["node", "server/index.js"]
