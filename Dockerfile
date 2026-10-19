@@ -25,4 +25,4 @@ ENV HOSTNAME="0.0.0.0"
 
 # ── Inherit the upstream ENTRYPOINT / CMD ─────────────────────────────
 # Do not override; the base image already starts the server.
-CMD ["node", "server/index.js"]
+# CMD ["node", "server/index.js"]
