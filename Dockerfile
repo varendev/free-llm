@@ -17,8 +17,8 @@ ENV NODE_ENV=production
 # If the upstream image already reads PORT and binds to 0.0.0.0,
 # these ENV defaults are harmless. If it does not, set HOST=0.0.0.0
 # (or the equivalent variable your app uses).
-ENV HOST=0.0.0.0
-ENV HOSTNAME="0.0.0.0"
+# ENV HOST=0.0.0.0
+# ENV HOSTNAME="0.0.0.0"
 
 # ── No VOLUME instruction: Vercel does not support persistent disks ───
 # The original /app/server/data directory will be ephemeral.
