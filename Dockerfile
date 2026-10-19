@@ -7,11 +7,11 @@ FROM ghcr.io/tashfeenahmed/freellmapi:latest
 # ── Runtime environment ──────────────────────────────────────────────
 # Vercel injects $PORT automatically; do NOT hard-code 3001.
 ENV NODE_ENV=production
-ENV PORT=3001
+# ENV PORT=3001
 
 # ── Document the port (Vercel uses $PORT at runtime) ──────────────────
 # Vercel defaults to port 80; exposing 3001 is only informative.
-EXPOSE 3001
+# EXPOSE 3001
 
 # ── Ensure the app binds to 0.0.0.0 and uses $PORT ────────────────────
 # If the upstream image already reads PORT and binds to 0.0.0.0,
