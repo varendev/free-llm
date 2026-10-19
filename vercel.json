@@ -1,0 +1,14 @@
+{
+  "services": {
+    "freellmapi": {
+      "root": ".",
+      "entrypoint": "Dockerfile.vercel"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": { "service": "freellmapi" }
+    }
+  ]
+}
