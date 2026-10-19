@@ -9,6 +9,8 @@ FROM ghcr.io/tashfeenahmed/freellmapi:latest
 ENV NODE_ENV=production
 # ENV PORT=3001
 
+COPY ./data /app/server/data
+
 # ── Document the port (Vercel uses $PORT at runtime) ──────────────────
 # Vercel defaults to port 80; exposing 3001 is only informative.
 ENV PORT=3001
